@@ -1,0 +1,864 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>RS Tours &amp; Travels | Premium Travel Experiences</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&amp;family=Dm+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/pecita" rel="stylesheet">
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"inverse-on-surface": "#f2f1ee", "inverse-primary": "#ffb783", "surface-container-lowest": "#ffffff", "surface-container-highest": "#e3e2e0", outline: "#897365", "secondary-fixed-dim": "#b4cdb8", "on-tertiary-fixed-variant": "#6e3900", "surface-container-low": "#f4f3f1", "on-surface": "#1a1c1a", error: "#ba1a1a", "on-secondary-fixed": "#0b2013", tertiary: "#8d4f11", "on-error-container": "#93000a", "on-surface-variant": "#564337", "on-primary-fixed-variant": "#713700", surface: "#faf9f6", "secondary-container": "#cde6d1", "primary-fixed": "#ffdcc5", "on-primary": "#ffffff", "on-secondary-fixed-variant": "#364c3c", "secondary-fixed": "#d0e9d4", "tertiary-fixed-dim": "#ffb77d", "on-tertiary-fixed": "#2f1500", background: "#faf9f6", "error-container": "#ffdad6", "surface-tint": "#944a00", "surface-bright": "#faf9f6", primary: "#944a00", "surface-variant": "#e3e2e0", "on-error": "#ffffff", "on-tertiary": "#ffffff", "surface-container-high": "#e9e8e5", "on-secondary": "#ffffff", "tertiary-fixed": "#ffdcc3", "tertiary-container": "#d38847", "primary-fixed-dim": "#ffb783", "surface-container": "#efeeeb", "on-tertiary-container": "#4e2700", "surface-dim": "#dbdad7", "outline-variant": "#dcc1b1", "on-primary-fixed": "#301400", "on-background": "#1a1c1a", "primary-container": "#e67e22", "on-primary-container": "#502600", "inverse-surface": "#2f312f", "on-secondary-container": "#516857", secondary: "#4d6453", "accent-orange": "#d9773a", "whatsapp-green": "#25D366", "surface-dark": "#18120d", "deep-navy": "#0b3d91"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"section-gap-lg": "120px", "section-gap-md": "80px", "element-gap": "16px", "container-max": "1280px", "margin-mobile": "20px", gutter: "24px", base: "8px", "section-padding": "80px", unit: "8px", "margin-desktop": "64px"}, fontFamily: {"display-lg": ["Playfair Display"], "label-md": ["DM Sans"], "headline-md": ["Playfair Display"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["DM Sans"], "body-lg": ["DM Sans"], pecita: ["Pecita", "cursive"], headline: ["Playfair Display"], display: ["Playfair Display"], body: ["Dm Sans"], label: ["Dm Sans"], "display-lg-mobile": ["Domine"], "accent-script": ["Pecita"], "label-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"]}, fontSize: {"body-md": ["16px", {lineHeight: "1.6", fontWeight: "400"}], "body-lg": ["18px", {lineHeight: "1.6", fontWeight: "400"}], "headline-md": ["28px", {lineHeight: "1.3", fontWeight: "500"}], "label-md": ["14px", {lineHeight: "1.4", letterSpacing: "0.05em", fontWeight: "500"}], "headline-sm": ["20px", {lineHeight: "1.4", fontWeight: "600"}], "display-lg-mobile": ["56px", {lineHeight: "1.1", fontWeight: "700"}], "display-lg": ["64px", {lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "600"}], "accent-script": ["1.2em", {fontWeight: "400"}], "label-lg": ["14px", {lineHeight: "1", letterSpacing: "0.05em", fontWeight: "600"}], "headline-xl": ["48px", {lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "800"}], "headline-lg": ["40px", {lineHeight: "1.2", fontWeight: "500"}], "headline-lg-mobile": ["32px", {lineHeight: "1.2", fontWeight: "500"}], "body-sm": ["14px", {lineHeight: "1.5", fontWeight: "400"}], "headline-xl-mobile": ["36px", {lineHeight: "1.1", fontWeight: "800"}]}}}};</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .cinematic-gradient-split {
+            background: linear-gradient(to right, rgba(11, 61, 145, 0.95) 0%, rgba(11, 61, 145, 0.7) 50%, rgba(0, 0, 0, 0.3) 100%);
+        }
+        .booking-card-shadow {
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.12);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .pecita-font {
+            font-family: 'Pecita', cursive;
+        }
+        .instrumental-serif-font {
+            font-family: 'Instrument Serif', serif;
+        }
+        .slider-container {
+            scroll-behavior: smooth;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes parallaxSlow {
+            from { background-position: 50% 0%; }
+            to { background-position: 50% 100%; }
+        }
+        
+        .animate-floating {
+            animation: floating 4s ease-in-out infinite;
+        }
+        
+        .hero-bg-parallax {
+            animation: parallaxSlow 60s linear infinite alternate;
+        }
+
+        .stagger-1 { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards; opacity: 0; }
+        .stagger-2 { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards; opacity: 0; }
+        .stagger-3 { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards; opacity: 0; }
+        .stagger-4 { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards; opacity: 0; }
+        .stagger-5 { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards; opacity: 0; }
+
+
+        .shimmer {
+            position: relative;
+            overflow: hidden;
+        }
+        .shimmer::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                45deg,
+                transparent 45%,
+                rgba(255, 255, 255, 0.2) 50%,
+                transparent 55%
+            );
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+        .shimmer:hover::after {
+            transform: translateX(100%);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hover-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .hover-card:hover {
+            transform: scale(1.03) translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        /* Testimonial Animation */
+        .testimonial-active {
+            animation: fadeIn 0.5s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .animate-floating, .stagger-1, .stagger-2, .stagger-3, .stagger-4, .stagger-5, .shimmer::after, .hover-card:hover, .hero-bg-parallax {
+                animation: none;
+                transform: none;
+                transition: none;
+                opacity: 1;
+            }
+        }
+        
+        .header-scrolled {
+            background-color: rgba(24, 18, 13, 0.95); /* surface color */
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container bg-red-600" data-mode="connect" style="background-color: rgb(255, 247, 0);">
+<!-- Top Utility Bar -->
+<div class="py-2 px-gutter hidden md:block bg-white text-on-surface border-b border-outline-variant">
+<div class="max-w-container-max mx-auto flex justify-between items-center text-label-md">
+<div class="flex gap-6">
+<span class="flex items-center gap-2 hover:text-primary-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">call</span> 6301227369</span>
+<span class="flex items-center gap-2 border-l border-white/20 pl-6 hover:text-primary-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+                    Pawan Residency, Kurnool
+                </span>
+</div>
+<div class="flex gap-4 items-center">
+<a class="hover:text-primary-container transition-colors" href="#">Follow Us:</a>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-[20px] cursor-pointer hover:text-primary-container transition-colors hover:scale-110">qr_code_2</span>
+<span class="material-symbols-outlined text-[20px] cursor-pointer hover:text-primary-container transition-colors hover:scale-110">share_reviews</span>
+<span class="material-symbols-outlined text-[20px] cursor-pointer hover:text-primary-container transition-colors hover:scale-110">alternate_email</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation Bar -->
+<header class="sticky top-0 w-full z-[100] bg-surface/50 backdrop-blur-sm transition-all duration-300 h-20" id="main-header">
+<nav class="max-w-container-max mx-auto h-full px-gutter flex justify-between items-center bg-on-secondary-fixed">
+<!-- Logo -->
+<a class="flex-shrink-0 group" href="#">
+<div class="flex items-center gap-3">
+<img alt="RS Tours Logo" class="h-14 object-contain group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGKVLYd-00FrC1iwhDrtSBtjblhPEft5D9zdsAGaLJaUfxjlTp8o7gLQ-FJIPNilt4EiBi9_LwYx422NG_zmDl2yZKvXycIeeetx608jsDXP4yBUxyfosZs9IgKGa5gJdzF2dhxnvx5rPKGZNy9TEBWafPIwNPXkcvgK9e4bTuEX2NBzbtvd3LnX5cEDiQ2nHRyfntV8dKjI0aQeBVqozlcyMT4vCuSebc4fEgwkEtpTXxjFbgtxSbs-r3lBLMVm90iRo">
+<span class="text-[28px] tracking-tight group-hover:text-primary transition-colors instrumental-serif-font text-white">RS Tours and Travel's </span>
+</div>
+</a>
+<!-- Navigation Links -->
+<div class="hidden lg:flex items-center gap-8"><a class="text-primary font-bold nav-link pb-1 font-label-md hover:scale-105 transition-transform" href="#">Home</a><a class="text-on-surface-variant hover:text-secondary nav-link pb-1 transition-all font-label-md hover:scale-105" href="#packages">Packages</a><a class="text-on-surface-variant hover:text-secondary nav-link pb-1 transition-all font-label-md hover:scale-105" href="#car-rentals">Cab Rentals</a><a class="text-on-surface-variant hover:text-secondary nav-link pb-1 transition-all font-label-md hover:scale-105" href="#contact">Contact</a></div>
+<!-- Action Button -->
+<button class="bg-primary-container text-on-primary-container shimmer font-label-md px-6 py-3 rounded-full hover:bg-primary hover:text-white transition-all duration-300 active:scale-95 shadow-lg">
+                Plan Your Trip
+            </button>
+<!-- Mobile Menu Toggle -->
+<button class="lg:hidden p-2 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
+</nav>
+</header>
+<!-- Hero Section: Split Layout -->
+<section class="relative min-h-screen lg:h-[921px] w-full overflow-hidden flex items-center reveal active" id="hero">
+<div class="absolute inset-0 bg-cover hero-bg-parallax" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAzqxx3xKDS3RaJwwDJUDDmoOQQ9wgndpnnlsZS2cQIUZbt7iE0zX9ESRXH6LZGSboIsolewwK-NWz57Q9ELXmuNdFdHD8yKINy8hN2vR-a0miCfGQhjrUJ4mRTghF3G29qUxjE8KArG8bvLmtxE3EBqVKh4jBiQjPSmtz6jO_KKbLkKKPRAyxX37iIHgNuKMXEWy4EW5CB7BI7VTUuWrfLBZEjg_cBOmPdAFGvCi8qjV0aMUch8Rdm-A&quot;);"></div>
+<div class="absolute inset-0 cinematic-gradient-split"></div>
+<div class="relative w-full max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-20 lg:py-0">
+<!-- Left Side: Content -->
+<div class="text-white space-y-8 animate-floating">
+<div class="stagger-1">
+<h1 class="font-display-lg text-[56px] leading-[1.1] md:text-[72px]">Discover <br><span class="text-primary-container instrumental-serif-font">Incredible India</span> <br>With Us</h1>
+</div>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-lg stagger-2">
+                    Embark on a journey through vibrant cultures, majestic landscapes, and timeless heritage with RS Tours &amp; Travels. Your premium travel partner.
+                </p>
+<div class="flex flex-wrap gap-4 stagger-3">
+<button class="bg-primary-container text-on-primary-container shimmer px-8 py-4 rounded-full font-label-md hover:shadow-[0_0_20px_rgba(217,119,58,0.5)] hover:bg-primary hover:text-white transition-all flex items-center gap-2 group">
+                        Explore Packages
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-label-md hover:bg-white/20 hover:shadow-lg transition-all">
+                        Contact Us
+                    </button>
+</div>
+</div>
+<!-- Right Side: Booking Widget -->
+<div class="w-full stagger-4">
+<div class="bg-white p-8 lg:p-10 rounded-[32px] booking-card-shadow space-y-6 max-w-md ml-auto hover:shadow-2xl transition-shadow duration-300">
+<h3 class="text-secondary font-headline-sm">Book Your Trip</h3>
+<div class="group/input space-y-2">
+<label class="font-label-md text-on-surface-variant flex items-center gap-2 group-focus-within/input:text-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-[20px]">explore</span> Destination
+                    </label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-xl focus:border-secondary focus:ring-4 focus:ring-secondary/10 transition-all h-12 px-4" placeholder="Where to go?" type="text">
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="group/input space-y-2">
+<label class="font-label-md text-on-surface-variant flex items-center gap-2 group-focus-within/input:text-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-[20px]">calendar_today</span> Check In
+                        </label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-xl focus:border-secondary focus:ring-4 focus:ring-secondary/10 transition-all h-12 px-4 text-sm" type="date">
+</div>
+<div class="group/input space-y-2">
+<label class="font-label-md text-on-surface-variant flex items-center gap-2 group-focus-within/input:text-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-[20px]">calendar_today</span> Check Out
+                        </label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-xl focus:border-secondary focus:ring-4 focus:ring-secondary/10 transition-all h-12 px-4 text-sm" type="date">
+</div>
+</div>
+<div class="group/input space-y-2">
+<label class="font-label-md text-on-surface-variant flex items-center gap-2 group-focus-within/input:text-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-[20px]">group</span> Travelers
+                    </label>
+<select class="w-full bg-surface-container-low border border-outline-variant rounded-xl focus:border-secondary focus:ring-4 focus:ring-secondary/10 transition-all h-12 px-4">
+<option>2 Adults, 1 Room</option>
+<option>1 Adult, 1 Room</option>
+<option>4 Adults, 2 Rooms</option>
+</select>
+</div>
+<button class="w-full bg-secondary text-white shimmer h-14 rounded-xl font-label-md hover:bg-on-secondary-fixed-variant transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-lg active:scale-[0.98] mt-4">
+<span class="material-symbols-outlined group-hover:rotate-12 transition-transform">search</span> Search Tours
+                </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Popular Destinations: Masonry Style Grid -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-lg reveal active bg-red-600" id="packages" style="background-color: rgb(27, 48, 34);">
+<div class="mb-12 text-center stagger-1">
+<h2 class="font-headline-md text-headline-md text-white">Popular Destinations</h2>
+<p class="mt-2 max-w-xl mx-auto text-white/80">Handpicked journeys for every type of traveler, curated for premium experiences across the subcontinent.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[250px] lg:auto-rows-[300px]">
+<!-- Masonry Item 1: Large -->
+<div class="md:col-span-8 md:row-span-2 group relative rounded-[32px] overflow-hidden cursor-pointer hover-card stagger-2">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBhPzGcFvfiaM49Fshv3n8G8VLtjlpn-Z_-v7_D3R0vSfuMvbogurzkQRYhSDww8fv3RCqKN-MFT3zdRSBifOcfypVRvW0lIfC9NzvQu-lriW22J6qm3gb-FZ3cBv2RLEAFnj1pNNOoSe_WwvGtkLGbRA0OvlTUXY772nOMBmYdtMvMiujn9eAFYjz0GiOTEtyN3yQJTubmAeBDznxAEEAlhua7e8sLTJDJVmGFG1KhMcPdpuNpcnMmBQ&quot;);"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute top-6 right-6 bg-primary-container text-on-primary-container text-[14px] font-bold px-4 py-1.5 rounded-full shadow-md">4.9 ★</div>
+<div class="absolute bottom-8 left-8 right-8 transform group-hover:-translate-y-2 transition-transform duration-300">
+<h3 class="text-white font-display-lg text-[42px] mb-2">Kashmir</h3>
+<p class="text-white/80 text-body-lg">Starting ₹24,999</p>
+</div>
+</div>
+<!-- Masonry Item 2: Tall -->
+<div class="md:col-span-4 md:row-span-2 group relative rounded-[32px] overflow-hidden cursor-pointer hover-card stagger-3">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuALH4nC_JggwuJ3GZJgCN1z6uMxr-14wiVO8e75GBgtfFlilLLNwso1mRVO7T7XnU20E-Fo3k8gf43pdN-lJ7XMbJncHwGUjnY9VVo_BICf316VQ8odkJc84C5f3vfk4T3rPG3ci3vx2WBwsOJmuZ461XFHQUkUZXXgfjeXPsogDzzvhs377dhD8pr6GU4de64PaTp0jGvFS0zeuKtnTIjkHplw9TeVS3h1kL53Q9Swy-JMGWBG64A4ZA&quot;);"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 right-6 transform group-hover:-translate-y-2 transition-transform duration-300">
+<h3 class="text-white font-headline-sm">Kerala</h3>
+<p class="text-white/80 text-label-md">Starting ₹18,500</p>
+</div>
+</div>
+<!-- Masonry Item 3: Standard -->
+<div class="md:col-span-5 md:row-span-1 group relative rounded-[32px] overflow-hidden cursor-pointer hover-card stagger-4">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCrdIH2TloTS_qbK9pmCIejqDyXbr02SnW_g7h1-2ItCl0unPH1SSTNRmjT7tQJigl2Hd1Aoa1c-rHKoUQ5Ms9s7R-31H6YlYVp7Rzuy3ZvG1Ru51WxI-otesRh0l0PhNt4jcONpH3AcXPFYLjHnjF22upApRy6Wfx7yL_XFEOTokvRo21WLl_251X4djgrSB88jKfj5JgHrg4GcnWkG5TMKP6XS_1ntcwnP1Dvg1A-NmGTh7Sqw5GPFg&quot;);"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 transform group-hover:-translate-y-2 transition-transform duration-300">
+<h3 class="text-white font-headline-sm">Goa</h3>
+</div>
+</div>
+<!-- Masonry Item 4: Standard -->
+<div class="md:col-span-7 md:row-span-1 group relative rounded-[32px] overflow-hidden cursor-pointer hover-card stagger-5">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBBmWFot4yA3ZFT5lPlNtmwO8nkzdVVw23Z7ekdDj5s3nQQYdYJDhDAMfONNdTFsbU-4hGw-Xov8kJ3DMHe7X1d_xu_CgsF_Uw6q09v5lmGVzQNaNoWvHhI0xsI59oXMdGGQU6UbrTHhqTiWKrfqU4lQZjDuUO6D8hndi-CjV1NpMDJ6qojXiM8wXAYmSpu1BCSLR41wtK07fsClIKozxeIXYHQxxXJcmfWcNNn4OLxs7NdoZCURSmjiA&quot;);"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 transform group-hover:-translate-y-2 transition-transform duration-300">
+<h3 class="text-white font-headline-sm">Jaipur</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- More Than Just Trips: Side-Scrolling Bar -->
+<section class="bg-secondary py-12 reveal active overflow-hidden" id="services">
+<div class="max-w-container-max mx-auto px-gutter mb-8 text-center lg:text-left flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+<div class="stagger-1">
+<h2 class="font-headline-md text-headline-md text-white">More Than Just Trips</h2>
+<p class="text-secondary-fixed opacity-80">A complete range of travel services at your fingertips</p>
+</div>
+<div class="flex gap-2 justify-center stagger-2">
+<button class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-primary-container hover:border-primary-container transition-all active:scale-95" onclick="scrollSlider('service-row', -1)">
+<span class="material-symbols-outlined">west</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-primary-container hover:border-primary-container transition-all active:scale-95" onclick="scrollSlider('service-row', 1)">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+<div class="flex gap-4 overflow-x-auto hide-scrollbar slider-container px-gutter max-w-[100vw] stagger-3" id="service-row">
+<!-- Service Items -->
+<div class="flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-6 w-48 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg group cursor-pointer">
+<span class="material-symbols-outlined text-primary-container text-[40px] mb-4 group-hover:scale-125 transition-transform duration-300">flight</span>
+<span class="text-white font-label-md">Flight Booking</span>
+</div>
+<div class="flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-6 w-48 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg group cursor-pointer">
+<span class="material-symbols-outlined text-primary-container text-[40px] mb-4 group-hover:scale-125 transition-transform duration-300">hotel</span>
+<span class="text-white font-label-md">Hotel Reservation</span>
+</div>
+<div class="flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-6 w-48 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg group cursor-pointer">
+<span class="material-symbols-outlined text-primary-container text-[40px] mb-4 group-hover:scale-125 transition-transform duration-300">description</span>
+<span class="text-white font-label-md">Visa Services</span>
+</div>
+<div class="flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-6 w-48 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg group cursor-pointer">
+<span class="material-symbols-outlined text-primary-container text-[40px] mb-4 group-hover:scale-125 transition-transform duration-300">health_and_safety</span>
+<span class="text-white font-label-md">Travel Insurance</span>
+</div>
+<div class="flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-6 w-48 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg group cursor-pointer">
+<span class="material-symbols-outlined text-primary-container text-[40px] mb-4 group-hover:scale-125 transition-transform duration-300">directions_bus</span>
+<span class="text-white font-label-md">Car/Bus Rental</span>
+</div>
+<div class="flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-6 w-48 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg group cursor-pointer">
+<span class="material-symbols-outlined text-primary-container text-[40px] mb-4 group-hover:scale-125 transition-transform duration-300">groups</span>
+<span class="text-white font-label-md">Group Tours</span>
+</div>
+<div class="flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-6 w-48 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg group cursor-pointer">
+<span class="material-symbols-outlined text-primary-container text-[40px] mb-4 group-hover:scale-125 transition-transform duration-300">directions_boat</span>
+<span class="text-white font-label-md">Cruise Booking</span>
+</div>
+<div class="flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-6 w-48 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg group cursor-pointer">
+<span class="material-symbols-outlined text-primary-container text-[40px] mb-4 group-hover:scale-125 transition-transform duration-300">badge</span>
+<span class="text-white font-label-md">Passport Assist</span>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="bg-surface-container-low py-section-gap-lg reveal active bg-red-600" id="why-us">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center max-w-2xl mx-auto mb-16 stagger-1">
+<h2 class="font-headline-md text-headline-md text-secondary">Why Choose RS Tours &amp; Travels?</h2>
+<p class="text-on-surface-variant mt-4">We redefine the way you travel, ensuring every mile is filled with comfort, safety, and unforgettable memories.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="bg-white p-8 rounded-2xl booking-card-shadow text-center space-y-4 hover-card transition-all stagger-2">
+<div class="w-16 h-16 bg-primary-container/10 rounded-2xl flex items-center justify-center mx-auto transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-primary-container text-[32px]" style="font-variation-settings: &quot;FILL&quot; 1;">package_2</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-secondary">Best Packages</h4>
+<p class="text-on-surface-variant text-body-md">Curated tour plans that offer the best value for your time and money.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl booking-card-shadow text-center space-y-4 hover-card transition-all stagger-3">
+<div class="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mx-auto transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-secondary text-[32px]" style="font-variation-settings: &quot;FILL&quot; 1;">support_agent</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-secondary">Expert Support</h4>
+<p class="text-on-surface-variant text-body-md">Travel experts to guide you from planning to the final return flight.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl booking-card-shadow text-center space-y-4 hover-card transition-all stagger-4">
+<div class="w-16 h-16 bg-primary-container/10 rounded-2xl flex items-center justify-center mx-auto transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-primary-container text-[32px]" style="font-variation-settings: &quot;FILL&quot; 1;">security</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-secondary">Safe &amp; Secure</h4>
+<p class="text-on-surface-variant text-body-md">Your safety is our priority. Verified stays and safe transportation.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl booking-card-shadow text-center space-y-4 hover-card transition-all stagger-5">
+<div class="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mx-auto transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-secondary text-[32px]" style="font-variation-settings: &quot;FILL&quot; 1;">chronic</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-secondary">24/7 Assistance</h4>
+<p class="text-on-surface-variant text-body-md">We are always a call away, no matter what time zone you are in.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Premium Car Rentals Section -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-lg overflow-hidden relative reveal active text-white" id="car-rentals" style="background-color: #1b3022;">
+<div class="flex justify-between items-end mb-10 stagger-1">
+<div>
+<h2 class="font-headline-md text-headline-md text-white">Premium Car Rentals</h2>
+<p class="mt-2 text-white/80">Luxury and comfort for every journey</p>
+</div>
+<div class="flex gap-4">
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-secondary hover:text-white hover:border-secondary transition-all active:scale-95" onclick="scrollSlider('car-slider', -1)">
+<span class="material-symbols-outlined">west</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-secondary hover:text-white hover:border-secondary transition-all active:scale-95" onclick="scrollSlider('car-slider', 1)">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+<div class="flex gap-8 overflow-x-auto hide-scrollbar slider-container pb-8 stagger-2" id="car-slider">
+<div class="min-w-[320px] md:min-w-[400px] flex-shrink-0 bg-white rounded-2xl overflow-hidden border border-outline-variant hover-card group">
+<div class="relative h-64 overflow-hidden">
+<img alt="Toyota Etios Sedan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRulziXD1Ax1qZDl-u6vuuJqszuEG9J94PcJlMWni0Akxkd3z5V2hUOHCwNXkz41S9UNzOLeKNOQXQF6eTAoEFc8ejiNPyGh3JiDtahrNKVD4bdF8rXj0qAfdueevwe3iIfvkVhIwj-f1-fNj8ejjUym1CU3iJZcIb0GdCjWp6VrVHfegMIAAyAiBynfqDd93LOoiGoUhPKC8wW665g7QvLDlGVx6LdjR8WTz8KmeSEiMFd06YPoegCg">
+<div class="absolute top-4 left-4 bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-[12px] font-bold shadow-md">Premium Sedan</div>
+</div>
+<div class="p-6 bg-red-600 text-white">
+<h4 class="font-headline-sm text-secondary mb-2 group-hover:text-primary transition-colors">Toyota Etios</h4>
+<p class="text-body-md mb-4 text-white/80">Perfect for business travel and small families.</p>
+<div class="flex justify-between items-center border-t border-surface-variant pt-4">
+<p class="text-headline-sm text-primary">₹2,500<span class="text-body-md font-normal text-on-surface-variant">/day</span></p>
+<button class="bg-secondary text-white shimmer px-4 py-2 rounded-lg font-label-md hover:bg-primary transition-colors active:scale-95" onclick="document.getElementById('booking-modal').classList.remove('hidden')">Book Now</button>
+</div>
+</div>
+</div>
+<div class="min-w-[320px] md:min-w-[400px] flex-shrink-0 bg-white rounded-2xl overflow-hidden border border-outline-variant hover-card group">
+<div class="relative h-64 overflow-hidden">
+<img alt="Toyota Innova Crysta SUV" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwvjzmTMRQRv44fd1JUgOqgl6ThjAS6DSujlluMeI4zhe-zRZkS2l-AwjoiCW6xO-9moND6LsznZZjQXfDJRGJOL20coLaFec_ovqE4f-LaRr9IuMp83CI2CJJ8_ynatqXGJG4bjCLqablA8QkH4skpPuJl8Kr3_YUCMMYFuIQET87Dh_gL1DIbbyS1KVOvhbgjRr_B-5lInLsDvKUHwoBA3nIuZgBBvLPz4Mrud6dFz2QV0kC2-67Eg">
+<div class="absolute top-4 left-4 bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-[12px] font-bold shadow-md">Luxury SUV</div>
+</div>
+<div class="p-6 bg-red-600">
+<h4 class="font-headline-sm text-secondary mb-2 group-hover:text-primary transition-colors">Toyota Innova Crysta</h4>
+<p class="text-body-md mb-4 text-white/80">Ultimate comfort for long distance group travel.</p>
+<div class="flex justify-between items-center border-t border-surface-variant pt-4">
+<p class="text-headline-sm text-primary">₹4,500<span class="text-body-md font-normal text-on-surface-variant">/day</span></p>
+<button class="bg-secondary text-white shimmer px-4 py-2 rounded-lg font-label-md hover:bg-primary transition-colors active:scale-95" onclick="document.getElementById('booking-modal').classList.remove('hidden')">Book Now</button>
+</div>
+</div>
+</div>
+<div class="min-w-[320px] md:min-w-[400px] flex-shrink-0 rounded-2xl overflow-hidden border border-outline-variant hover-card group bg-red-600">
+<div class="relative h-64 overflow-hidden">
+<img alt="Force Tempo Traveller" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKNZuzC7NEcgvb7RY9OeJi3pBFEb8rB6JgwPy1zv3pzSatLSSRYQig5ct1uF69f5uzleMzCaXiPL547_GhMldcH-Tqi01zwIkoPq7Gb7wEqLSPeRePzyrcWsp7mPuhtoFWXw5XnFYt19nwMEfEnbnScbSafe0HFHIq8OFXPwqUvbTNA5iKt90uC7qfXrQSar0u111RRCEPbpVKbWM1WbeRjsJSHXHmapI5ze25AwcFYgZVYRtaGTFcYg">
+<div class="absolute top-4 left-4 bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-[12px] font-bold shadow-md">Group Traveller</div>
+</div>
+<div class="p-6">
+<h4 class="font-headline-sm text-secondary mb-2 group-hover:text-primary transition-colors">Force Tempo Traveller</h4>
+<p class="text-body-md mb-4 text-white/80">Spacious and comfortable for large family tours.</p>
+<div class="flex justify-between items-center border-t border-surface-variant pt-4">
+<p class="text-headline-sm text-primary">₹7,500<span class="text-body-md font-normal text-on-surface-variant">/day</span></p>
+<button class="bg-secondary text-white shimmer px-4 py-2 rounded-lg font-label-md hover:bg-primary transition-colors active:scale-95" onclick="document.getElementById('booking-modal').classList.remove('hidden')">Book Now</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Top Tour Packages -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-lg overflow-hidden relative reveal active" id="tour-packages" style="background-color: rgb(27, 48, 34);">
+<div class="flex justify-between items-center mb-16 stagger-1">
+<div class="text-left">
+<h2 class="font-headline-md text-headline-md text-white">Top Tour Packages</h2>
+<div class="w-20 h-1 bg-primary-container mt-4 rounded-full"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 stagger-2" id="package-slider">
+<div class="md:col-span-7 bg-white rounded-2xl overflow-hidden border border-outline-variant hover-card group cursor-pointer flex flex-col sm:flex-row h-full">
+<div class="relative h-56 sm:h-auto sm:w-1/2 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDzn-5fH-0PS6w2hCl1jkBwRm_O82X6z0XgSdEgtkoEybmPQmwgAXRH6a6WS3z-6eNkC3bYt7mE-rU-zFzveZHNLo38cgFBMtNJYFQ7LuVyj8DmBoOsGPxwD7paLPHFxuceSTY5m4DO1fPknDEIaNAQK784VHFSL7F6dzqItyu8lCHJkUkCx1ziPtSWjPrhdbwgmXZIDUoU7JifwnWaFxMYpgBbJrjtYc6myQ1e2J71E6ecRbRSvFqljg&quot;);"></div>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-secondary font-bold text-[12px] shadow-sm">6 Days / 5 Nights</div>
+</div>
+<div class="p-6 space-y-4 sm:w-1/2 flex flex-col justify-between"><div class=""><h4 class="font-headline-sm text-[18px] text-on-surface group-hover:text-primary transition-colors">Kerala Backwaters</h4><div class="flex items-center gap-2 text-on-surface-variant text-label-md mt-2"><span class="material-symbols-outlined text-[18px]">location_on</span> Kerala, India</div><div class="mt-4 space-y-2"><p class="text-label-md text-secondary font-bold uppercase tracking-wider">Top Destinations:</p><ul class="grid grid-cols-2 gap-2 text-body-md text-on-surface-variant"><li class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Alleppey</li><li class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Munnar</li><li class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Wayanad</li><li class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Thekkady</li></ul></div></div><div class="flex justify-between items-center pt-4 border-t border-surface-variant mt-4"><div><p class="text-[12px] text-white/70">Starting from</p><p class="text-secondary font-bold text-headline-sm">₹28,500</p></div><button class="bg-primary-container/10 text-primary-container p-2 rounded-xl shimmer hover:bg-primary-container hover:text-white transition-all hover:shadow-md active:scale-95" onclick="document.getElementById('booking-modal').classList.remove('hidden')"><span class="material-symbols-outlined">chevron_right</span></button></div></div>
+</div>
+<div class="md:col-span-5 bg-white rounded-2xl overflow-hidden border border-outline-variant hover-card group cursor-pointer flex flex-col h-full">
+<div class="relative h-56 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC0WcAS1yhbt4mchqw53FfYqVJ6dbexRwlIRyXAEtMIf235CVqIcNKrz5f7j_KkfbZq6Lod6_OgVq0smKoXhmusHDRMVsKnsL7sMIOapziLPV8AIN8t0Ynv8Vpk6wjDSS_B67q4BBAKB6Uw5tXM0ebmZOsegHATnTjXTaybfJX_M-LDjrS2iU_DWfp08c1AMkwBu7mGR8vIDKSH5y7An_tSGN2muBnJLX3AIpVGsX92UCKZ_07jjxol7g&quot;);"></div>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-secondary font-bold text-[12px] shadow-sm">4 Days / 3 Nights</div>
+</div>
+<div class="p-6 space-y-4 flex flex-col justify-between flex-grow">
+<div>
+<h4 class="font-headline-sm text-[18px] text-on-surface group-hover:text-primary transition-colors">Hampi Ruins</h4>
+<div class="flex items-center gap-2 text-on-surface-variant text-label-md mt-2">
+<span class="material-symbols-outlined text-[18px]">location_on</span> Karnataka, India
+                        </div>
+</div>
+<div class="flex justify-between items-center pt-4 border-t border-surface-variant mt-4">
+<div>
+<p class="text-[12px] text-white/70">Starting from</p>
+<p class="text-secondary font-bold text-headline-sm">₹16,000</p>
+</div>
+<button class="bg-primary-container/10 text-primary-container p-2 rounded-xl shimmer hover:bg-primary-container hover:text-white transition-all hover:shadow-md active:scale-95" onclick="document.getElementById('booking-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 bg-white rounded-2xl overflow-hidden border border-outline-variant hover-card group cursor-pointer flex flex-col h-full">
+<div class="relative h-56 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC1V8bg-KuzytphbvkzynAQ0laWj-l2n9c9keKuFbHm3Jp-kOALBu5o2dCQgUIr-JYU4ZQmZQ1kK1-LUNOyJR4ytfN9zLSkXpcyrB5kYUHHZqY_5H-R69JEIpkGp8ymP1DrJ87PLcCSoB4NRP0E02I-W4QlvDreeSJBnMJXYJSVx-8JbgObhXKJ4mWb53C5rxNS6RvZZ6CWpnEQsXmE4cUUdMSRh4zsS1iZP2Twj08BuFPjT5YMQpQ1lw&quot;);"></div>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-secondary font-bold text-[12px] shadow-sm">5 Days / 4 Nights</div>
+</div>
+<div class="p-6 space-y-4 flex flex-col justify-between flex-grow">
+<div>
+<h4 class="font-headline-sm text-[18px] text-on-surface group-hover:text-primary transition-colors">Rishikesh Adventure</h4>
+<div class="flex items-center gap-2 text-on-surface-variant text-label-md mt-2">
+<span class="material-symbols-outlined text-[18px]">location_on</span> Uttarakhand, India
+                        </div>
+</div>
+<div class="flex justify-between items-center pt-4 border-t border-surface-variant mt-4">
+<div>
+<p class="text-[12px] text-on-surface-variant">Starting from</p>
+<p class="text-secondary font-bold text-headline-sm">₹18,500</p>
+</div>
+<button class="bg-primary-container/10 text-primary-container p-2 rounded-xl shimmer hover:bg-primary-container hover:text-white transition-all hover:shadow-md active:scale-95" onclick="document.getElementById('booking-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<div class="md:col-span-8 bg-white rounded-2xl overflow-hidden border border-outline-variant hover-card group cursor-pointer flex flex-col sm:flex-row h-full">
+<div class="relative h-56 sm:h-auto sm:w-1/2 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAgL3AgFDpxGajQ__rasWU8W2jRAf-N1Knt42EXThnF2e6VPRkbiBddkWYADHO7UCga7zwKHuQzlfKmjbCqiR2oRT7ZS7zDSqHElWwS48BPOMEHprOXEF9wtJIdEdlMnhSt3v9zbuJ2UjJR9qeUvv-nJ8LOuWwQCzLU6lgp7lZwxpzsy2O9arLuZPIydzbo5Rlhd4gB7h9PZiIeU0epsJY42VPR_RUiUXfSc6SCubVKRMaRDvayn6jHww&quot;);"></div>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-secondary font-bold text-[12px] shadow-sm">7 Days / 6 Nights</div>
+</div>
+<div class="p-6 space-y-4 sm:w-1/2 flex flex-col justify-between">
+<div>
+<h4 class="font-headline-sm text-[18px] text-on-surface group-hover:text-primary transition-colors">Andaman Islands</h4>
+<div class="flex items-center gap-2 text-on-surface-variant text-label-md mt-2">
+<span class="material-symbols-outlined text-[18px]">location_on</span> Andaman &amp; Nicobar
+                        </div>
+</div><div class="mt-4 space-y-2"><p class="text-label-md text-secondary font-bold uppercase tracking-wider">Key Attractions:</p><ul class="grid grid-cols-1 gap-1 text-body-md text-on-surface-variant"><li class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Radhanagar Beach</li><li class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Cellular Jail</li><li class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Havelock Island</li></ul></div>
+<div class="flex justify-between items-center pt-4 border-t border-surface-variant mt-4">
+<div>
+<p class="text-[12px] text-on-surface-variant">Starting from</p>
+<p class="text-secondary font-bold text-headline-sm">₹45,000</p>
+</div>
+<button class="bg-primary-container/10 text-primary-container p-2 rounded-xl shimmer hover:bg-primary-container hover:text-white transition-all hover:shadow-md active:scale-95" onclick="document.getElementById('booking-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials: Single Featured Card -->
+<section class="py-section-gap-lg bg-surface-container-low reveal active bg-red-600" id="testimonials">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-12 stagger-1">
+<h2 class="font-headline-md text-headline-md text-secondary">What Our Travelers Say</h2>
+</div>
+<div class="max-w-3xl mx-auto relative group stagger-2">
+<!-- Active Testimonial Card -->
+<div class="bg-white p-12 lg:p-20 rounded-[40px] border border-outline-variant booking-card-shadow text-center testimonial-active hover-card" id="active-testimonial" style="background-color: red; color: red;">
+<div class="flex gap-1 text-primary-container justify-center mb-8">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="text-on-surface text-[24px] lg:text-[32px] leading-tight italic mb-12 instrumental-serif-font" id="t-text">"Booked my family's pilgrimage to Kedarnath. The assistance provided for seniors was exceptional. They took care of every small detail. Thank you RS Tours!"</p>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-white font-bold text-xl mb-4 hover:scale-110 transition-transform cursor-pointer" id="t-avatar">PS</div>
+<h5 class="font-headline-sm text-secondary" id="t-name">Priya Sharma</h5>
+<p class="text-label-md text-on-surface-variant uppercase tracking-wider mt-1" id="t-role">Teacher</p>
+</div>
+</div>
+<!-- Navigation -->
+<div class="absolute top-1/2 -left-6 lg:-left-20 -translate-y-1/2 flex items-center opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-12 h-12 rounded-full bg-white border border-outline-variant flex items-center justify-center shadow-lg hover:bg-secondary hover:text-white transition-all active:scale-95" onclick="rotateTestimonial(-1)">
+<span class="material-symbols-outlined">west</span>
+</button>
+</div>
+<div class="absolute top-1/2 -right-6 lg:-right-20 -translate-y-1/2 flex items-center opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-12 h-12 rounded-full bg-white border border-outline-variant flex items-center justify-center shadow-lg hover:bg-secondary hover:text-white transition-all active:scale-95" onclick="rotateTestimonial(1)">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Office Info & Map -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-lg reveal active" style="background-color: rgb(27, 48, 34);">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8 stagger-1">
+<h2 class="font-headline-md text-headline-md text-white">Visit Our Office</h2>
+<div class="space-y-6">
+<div class="flex gap-4 group cursor-pointer hover:-translate-y-1 transition-transform bg-white/5 p-4 rounded-2xl hover:shadow-md">
+<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110 group-hover:bg-primary-container group-hover:text-white">
+<span class="material-symbols-outlined text-primary-container group-hover:text-white transition-colors">location_on</span>
+</div>
+<div>
+<h4 class="font-label-md text-white">Address</h4>
+<p class="text-surface-dim">Pawan Residency, Near Krishna Nagar,<br>Nandikotkur Road, Kurnool - 518002</p>
+</div>
+</div>
+<div class="flex gap-4 group cursor-pointer hover:-translate-y-1 transition-transform bg-white/5 p-4 rounded-2xl hover:shadow-md">
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110 group-hover:bg-secondary group-hover:text-white">
+<span class="material-symbols-outlined text-secondary group-hover:text-white transition-colors">mail</span>
+</div>
+<div>
+<h4 class="font-label-md text-white">Email Us</h4>
+<p class="text-surface-dim">rstoursandtravels.knl@gmail.com</p>
+</div>
+</div>
+<div class="flex gap-4 group cursor-pointer hover:-translate-y-1 transition-transform bg-white/5 p-4 rounded-2xl hover:shadow-md">
+<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110 group-hover:bg-primary-container group-hover:text-white">
+<span class="material-symbols-outlined text-primary-container group-hover:text-white transition-colors">call</span>
+</div>
+<div>
+<h4 class="font-label-md text-white">Call Support</h4>
+<p class="text-surface-dim">6301227369</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-[400px] rounded-2xl overflow-hidden shadow-lg border border-surface-variant hover-card transition-all stagger-2 group cursor-pointer">
+<img alt="RS Tours &amp; Travels Location Map" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIgHNCcvYJGoiL06z7NxsupGmr2DsssDaioY12lkAPy0KxCeHoj23-qmxD4kKw3FVSe0OFUK5OC1mVl5_8vr29I-xoERnMLmCwJWMh0WZtjOgRH8jafLtiNOXr12MaFNxxmKNAh0aQf048mQVNBQoNIXy3Xwadk7_Gt5FXWt3jtYW_c9NvEYEd3LF2sEh8dCEwAXxbrJXFzvB4kOo5HyoVPr0wuKtxE7ZMbn12budfbxOWtzma2dFDOw">
+</div>
+</div>
+</section>
+<!-- Traveler Tips & Blogs -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-lg reveal active bg-red-600" id="blogs">
+<div class="text-center mb-16 stagger-1">
+<h2 class="font-headline-md text-headline-md text-secondary">Traveler Tips &amp; Blogs</h2>
+<p class="text-on-surface-variant mt-2 max-w-xl mx-auto">Expert advice and stories to inspire your next journey.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 stagger-2">
+<div class="bg-surface-container-low rounded-3xl overflow-hidden border border-outline-variant hover-card group cursor-pointer">
+<div class="h-48 overflow-hidden relative"><img alt="Colorful Indian street market" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDADxYaX_csriUp2TxfaYLS835GwgfmuhOxAJs4qau4ohdaFkSUxHHqtoiRic1eW8FuNIIfUSIt03G_m6Smm5QwiAfNp6ujRL31-n0Mxe9z-Zmpl9Z_4r-NbLNtpDIASGtpSgyAI6uWGuN2SCwS4DKZi3_Aklz0hEFFYOKH5icZo2FcfJYYBKKEq_OpC5KWp638u463XbcquQ3IjXUl3SRE-pE1BX8aM7Psi25fLEJ6Wy9fsc5N-HwW3g"></div>
+<div class="p-8 space-y-4">
+<div class="text-primary-container text-[12px] font-bold uppercase tracking-wider">Travel Guide</div>
+<h3 class="font-headline-sm text-[20px] text-secondary group-hover:text-primary transition-colors">5 Essential Tips for Your First India Trip</h3>
+<p class="text-on-surface-variant text-body-md line-clamp-3">Everything you need to know before embarking on your first journey to the subcontinent, from packing essentials to cultural etiquette.</p>
+<div class="flex items-center gap-2 text-primary pt-4 font-label-md group-hover:translate-x-2 transition-transform">
+                    Read Article <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-3xl overflow-hidden border border-outline-variant hover-card group cursor-pointer">
+<div class="h-48 overflow-hidden relative"><img alt="Ancient temple in Rajasthan" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM3Arv5k7cty3bm7oEzI9jSimNq19fHwc-zpL5KWk52vp-rKdzHXty8tO4nKCYak8t6ZLhUexeXYZ07Wa3rPJuCY3kxLPV_t6SEvHnZo4ykXmlsmC8V3gk-TOdayu8wCtLHwI8nBTESE7Vql8rCQZr6oznZ2rE1jvMd5KP8MgJOCm0nB6w3DD5Cr1rnp62HPh9vom7GviUf-5gHeTgx77HnFM1ewdlCay6bhBj0F4Nyel2TSR98tpb5Q"></div>
+<div class="p-8 space-y-4">
+<div class="text-primary-container text-[12px] font-bold uppercase tracking-wider">Destinations</div>
+<h3 class="font-headline-sm text-[20px] text-secondary group-hover:text-primary transition-colors">Exploring the Hidden Gems of Rajasthan</h3>
+<p class="text-on-surface-variant text-body-md line-clamp-3">Go beyond the popular palaces and discover the lesser-known historical marvels and desert towns of incredible Rajasthan.</p>
+<div class="flex items-center gap-2 text-primary pt-4 font-label-md group-hover:translate-x-2 transition-transform">
+                    Read Article <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-3xl overflow-hidden border border-outline-variant hover-card group cursor-pointer">
+<div class="h-48 overflow-hidden relative"><img alt="Yoga in the Himalayas" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3iFEHqisRjHHjm_9TXDYD5anYWgqjxmejjEsaN0dv20Wu639-_ciMv-lVqILHxwVRGETq3MZ8klDHER-wgO3kCaI7CpMNWUy069eNBKQSefA8WZltZJ3DQTSmz9VkRSU1xM7w9HYeen62GWQqDXjPihWEnF5sWKezW9bWEScTsTvqcrB6B7j_HmmCRBnCNQ83Msej-MPNi3i9nwiQejtbhJeJ5ajHvisFOZZpYLW6FXGVcfFNmSFXlg"></div>
+<div class="p-8 space-y-4">
+<div class="text-primary-container text-[12px] font-bold uppercase tracking-wider">Conscious Travel</div>
+<h3 class="font-headline-sm text-[20px] text-secondary group-hover:text-primary transition-colors">Sustainable Travel: How to be a Conscious Explorer</h3>
+<p class="text-on-surface-variant text-body-md line-clamp-3">Learn how to minimize your footprint and leave a positive impact on the communities and environments you visit during your travels.</p>
+<div class="flex items-center gap-2 text-primary pt-4 font-label-md group-hover:translate-x-2 transition-transform">
+                    Read Article <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer: Modern Multi-Column -->
+<footer class="bg-on-secondary-fixed text-secondary-fixed pt-20 pb-10 px-gutter rounded-t-[60px] reveal active" id="contact">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-20 stagger-1">
+<!-- Brand Pillar -->
+<div class="lg:col-span-2 space-y-8">
+<div class="flex items-center gap-3 hover:-translate-y-1 transition-transform cursor-pointer">
+<img alt="RS Tours Logo" class="h-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC7A8SG9ghSZ29K63jq9qggF0kvdnNKEumj1D8_H-oa2jZrrePCn2FMbSFyuov-V1vDK4wtqk5iWTtSu726ZV5cipHlU3fAgaKRSevw-0_GtAi2lyovQqozhtVPHmhM9j4_PeHzf_lzdS5MbUoM2r_PuFM1HaTJ1tlxvY_z9VW4igDSTd3z4sfRKg5fe_u8fUvKGHsSZ_aZjLj2rU8HGHymRq2kil6FrDtaa4MZdCSjpR44ZO50hOUDwa9yDNhTZzQzfk">
+<span class="text-3xl text-white instrumental-serif-font">RS Tours &amp; Travels</span>
+</div>
+<p class="opacity-70 text-body-md leading-relaxed">Your trusted partner for domestic and international travel since 2015. We bring you closer to the heart of India with curated premium experiences.</p>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary-container hover:border-primary-container transition-all hover:scale-110 hover:shadow-lg" href="#">
+<span class="material-symbols-outlined text-[24px]">qr_code_2</span>
+</a>
+<a class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary-container hover:border-primary-container transition-all hover:scale-110 hover:shadow-lg" href="#">
+<span class="material-symbols-outlined text-[24px]">photo_camera</span>
+</a>
+<a class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary-container hover:border-primary-container transition-all hover:scale-110 hover:shadow-lg" href="#">
+<span class="material-symbols-outlined text-[24px]">share_reviews</span>
+</a>
+</div>
+</div>
+<!-- Column 1 -->
+<div>
+<h4 class="text-white font-headline-sm text-[18px] mb-8">Packages</h4>
+<ul class="space-y-4 opacity-70">
+<li class=""><a class="hover:text-primary-container hover:translate-x-1 inline-block transition-all" href="#">Domestic</a></li>
+<li class=""><a class="hover:text-primary-container hover:translate-x-1 inline-block transition-all" href="#">Pilgrimage</a></li>
+<li class=""><a class="hover:text-primary-container hover:translate-x-1 inline-block transition-all" href="#">Adventure</a></li>
+<li class=""><a class="hover:text-primary-container hover:translate-x-1 inline-block transition-all" href="#">Honeymoon</a></li>
+</ul>
+</div>
+<!-- Column 2 -->
+<div>
+<h4 class="text-white font-headline-sm text-[18px] mb-8">Services</h4>
+<ul class="space-y-4 opacity-70">
+<li class=""><a class="hover:text-primary-container hover:translate-x-1 inline-block transition-all" href="#">Car Rentals</a></li>
+<li class=""><a class="hover:text-primary-container hover:translate-x-1 inline-block transition-all" href="#">Flight Booking</a></li>
+<li class=""><a class="hover:text-primary-container hover:translate-x-1 inline-block transition-all" href="#">Visa Assist</a></li>
+<li class=""><a class="hover:text-primary-container hover:translate-x-1 inline-block transition-all" href="#">Insurance</a></li>
+</ul>
+</div>
+<!-- Column 3 -->
+<div>
+<h4 class="text-white font-headline-sm text-[18px] mb-8">Support</h4>
+<ul class="space-y-4 opacity-70">
+<li class=""><a class="hover:text-primary-container hover:translate-x-1 inline-block transition-all" href="#">Privacy</a></li>
+<li class=""><a class="hover:text-primary-container hover:translate-x-1 inline-block transition-all" href="#">Terms</a></li>
+<li class=""><a class="hover:text-primary-container hover:translate-x-1 inline-block transition-all" href="#">Refunds</a></li>
+<li class=""><a class="hover:text-primary-container hover:translate-x-1 inline-block transition-all" href="#">Contact</a></li>
+</ul>
+</div>
+<!-- Column 4: Newsletter -->
+<div class="lg:col-span-2 space-y-8 bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors duration-300">
+<div>
+<h4 class="text-white font-headline-sm text-[20px] mb-2">Get Travel Updates</h4>
+<p class="opacity-70 text-sm">Subscribe for exclusive offers and tour updates.</p>
+</div>
+<div class="flex gap-2">
+<input class="bg-white/10 border border-white/10 rounded-xl px-4 py-4 text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary-container w-full transition-all text-sm" placeholder="Your Email" type="email">
+<button class="bg-primary-container text-on-primary-container p-4 rounded-xl shimmer hover:bg-primary transition-all hover:shadow-lg active:scale-95">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm opacity-60">
+<p class="">© 2024 RS Tours &amp; Travels. All rights reserved.</p>
+<div class="flex gap-8">
+<span class="hover:text-white transition-colors cursor-pointer">Designed by Premium UI</span>
+<span class="hover:text-white transition-colors cursor-pointer">Powered by RS Global</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Side Floating Support -->
+<div class="fixed bottom-8 right-8 flex flex-col gap-4 z-[9999]">
+<a class="bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform flex items-center justify-center shimmer hover:shadow-[#25D366]/50" href="https://wa.me/6301227369" target="_blank" title="WhatsApp Support">
+<svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.185-.573c.948.604 2.023.997 3.144.997h.002c3.182 0 5.767-2.586 5.768-5.766 0-3.18-2.585-5.739-5.768-5.739zm3.392 8.157c-.145.409-.841.763-1.168.809-.327.046-.654.103-1.811-.365-1.157-.468-1.905-1.637-1.962-1.714-.057-.077-.477-.635-.477-1.21s.3-.865.408-.98c.108-.115.237-.144.316-.144l.227.006c.081.002.191-.031.298.226l.441 1.07c.048.117.081.252.003.408-.078.156-.118.252-.232.384-.114.133-.243.296-.346.398-.117.115-.24.239-.104.475.136.236.604.992 1.299 1.61.894.796 1.649 1.042 1.884 1.158.236.115.372.097.51-.058.138-.156.591-.689.749-.927.158-.238.316-.197.534-.115.218.082 1.385.654 1.623.771.238.117.397.172.454.27.057.098.057.568-.088.977z"></path>
+</svg>
+</a>
+<button class="bg-surface text-secondary p-4 rounded-full shadow-lg border border-surface-variant hover:scale-110 transition-transform flex items-center justify-center hover:bg-secondary hover:text-white" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<span class="material-symbols-outlined">arrow_upward</span>
+</button>
+</div>
+<script>
+        // Universal slider scroll function
+        function scrollSlider(sliderId, direction) {
+            const slider = document.getElementById(sliderId);
+            const scrollAmount = slider.offsetWidth * 0.5;
+            slider.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        // Testimonial Rotation Logic
+        const testimonials = [
+            {
+                text: `"Our Kashmir trip was perfectly organized by RS Tours. From the houseboat stay to the car rental, everything was top-notch and stress-free. Highly recommended!"`,
+                name: "Ravi Kumar",
+                role: "Business Traveler",
+                avatar: "RK"
+            },
+            {
+                text: `"Booked my family's pilgrimage to Kedarnath. The assistance provided for seniors was exceptional. They took care of every small detail. Thank you RS Tours!"`,
+                name: "Priya Sharma",
+                role: "Teacher",
+                avatar: "PS"
+            },
+            {
+                text: `"Excellent car rental service in Kurnool. The driver was professional and the vehicle was clean. Made our local site-seeing very comfortable."`,
+                name: "Arjun Menon",
+                role: "Photographer",
+                avatar: "AM"
+            }
+        ];
+        let currentT = 0;
+
+        function rotateTestimonial(dir) {
+            currentT = (currentT + dir + testimonials.length) % testimonials.length;
+            const t = testimonials[currentT];
+            const card = document.getElementById('active-testimonial');
+            
+            card.classList.remove('testimonial-active');
+            void card.offsetWidth; // Trigger reflow
+            
+            document.getElementById('t-text').innerText = t.text;
+            document.getElementById('t-name').innerText = t.name;
+            document.getElementById('t-role').innerText = t.role;
+            document.getElementById('t-avatar').innerText = t.avatar;
+            
+            card.classList.add('testimonial-active');
+        }
+
+        // Intersection Observer for Reveal
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.15 });
+            revealElements.forEach(el => revealObserver.observe(el));
+            
+            // Header scroll interaction
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('header-scrolled');
+                    header.classList.remove('bg-surface/50');
+                } else {
+                    header.classList.remove('header-scrolled');
+                    header.classList.add('bg-surface/50');
+                }
+            });
+            
+            // Smooth scroll for internal links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+<div class="fixed inset-0 z-[9999] hidden flex items-center justify-center p-4 transition-opacity duration-300" id="booking-modal">
+<div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="document.getElementById('booking-modal').classList.add('hidden')"></div>
+<div class="relative bg-white w-full max-w-md rounded-[32px] p-8 shadow-2xl transform transition-all duration-300 scale-100">
+<button class="absolute top-6 right-6 text-on-surface-variant hover:text-secondary hover:rotate-90 transition-transform duration-300" onclick="document.getElementById('booking-modal').classList.add('hidden')">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h3 class="text-headline-sm text-secondary mb-6">Inquiry Form</h3>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Inquiry submitted successfully!'); document.getElementById('booking-modal').classList.add('hidden');">
+<div class="space-y-1">
+<label class="text-label-md text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-xl h-12 px-4 focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all" required="" type="text">
+</div>
+<div class="space-y-1">
+<label class="text-label-md text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-xl h-12 px-4 focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all" required="" type="email">
+</div>
+<div class="space-y-1">
+<label class="text-label-md text-on-surface-variant">Phone Number</label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-xl h-12 px-4 focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all" required="" type="tel">
+</div>
+<div class="space-y-1">
+<label class="text-label-md text-on-surface-variant">Special Requirements</label>
+<textarea class="w-full bg-surface-container-low border border-outline-variant rounded-xl p-4 focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all h-32" placeholder="Tell us about your travel plans..."></textarea>
+</div>
+<button class="w-full bg-secondary text-white shimmer h-14 rounded-xl font-label-md hover:bg-on-secondary-fixed-variant transition-all shadow-lg active:scale-95 mt-4" type="submit">Submit Inquiry</button>
+</form>
+</div>
+</div>
+
+
+</body></html>
